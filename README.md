@@ -10,11 +10,6 @@
 
 **INFO_CHAT** is a powerful and interactive **AI-driven chatbot** built using **LangChain** and **Flask**, designed to deliver accurate, well-structured, and visually appealing responses. With a **modern UI** and **smooth animations**, it offers a sleek, intuitive, and professional chat experience. Whether you're looking for general information, explanations, or dynamic interactions, **INFO_CHAT** makes the conversation clear, engaging, and stylish.  
 
----
-
-## 📸 **Preview**  
-<!-- Add an image of your app here -->  
-![INFO_CHAT Preview](link-to-image)  
 
 ---
 
