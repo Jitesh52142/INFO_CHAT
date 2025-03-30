@@ -1,7 +1,7 @@
 Flask==2.2.3
 langchain==0.0.161
 langchain_community==0.0.1
-langchain_groq==0.1.0
+langchain_groq
 openai==0.27.0
-wikipedia-api==0.5.4
+wikipedia-api
 gunicorn
