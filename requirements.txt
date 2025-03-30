@@ -3,5 +3,5 @@ langchain
 langchain_community
 langchain_groq
 openai
-wikipedia-api
+wikipedia
 gunicorn
