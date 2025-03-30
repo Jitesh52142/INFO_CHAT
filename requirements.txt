@@ -1,5 +1,6 @@
-Flask
-langchain
-langgraph
-groq
-langchain_community
+Flask==2.2.3
+langchain==0.0.161
+langchain_community==0.0.1
+langchain_groq==0.1.0
+openai==0.27.0
+wikipedia-api==0.5.4
