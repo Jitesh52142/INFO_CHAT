@@ -14,7 +14,8 @@
 
 ## 📸 **Preview**  
 <!-- Add an image of your app here -->  
-![INFO_CHAT Preview](link-to-image)  
+![INFO_CHAT Preview][image](https://github.com/user-attachments/assets/86b4071d-c584-40a4-aedc-98e5cd5a217a)
+  
 
 ---
 
