@@ -7,13 +7,10 @@ from langchain_community.utilities import WikipediaAPIWrapper, ArxivAPIWrapper
 from langchain_groq import ChatGroq
 import os
 
-
 app = Flask(__name__)
 
-GROQ_API_KEY= "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"
-
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "YOUR_GROQ_API_KEY")
-
+# Ensure the API key is correctly set
+GROQ_API_KEY = "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"
 
 wiki_wrapper = WikipediaAPIWrapper(top_k_results=3, doc_content_chars_max=500)
 arxiv_wrapper = ArxivAPIWrapper(top_k_results=3, doc_content_chars_max=500)
@@ -21,12 +18,10 @@ arxiv_wrapper = ArxivAPIWrapper(top_k_results=3, doc_content_chars_max=500)
 wiki_tool = WikipediaQueryRun(api_wrapper=wiki_wrapper)
 arxiv_tool = ArxivQueryRun(api_wrapper=arxiv_wrapper)
 
-
+# Initialize the Groq model with the correct API key
 llm = ChatGroq(groq_api_key=GROQ_API_KEY, model_name="Gemma2-9b-It")
 
-
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
-
 
 prompt = PromptTemplate(
     input_variables=["chat_history", "user_input"],
@@ -36,7 +31,6 @@ prompt = PromptTemplate(
         "\n\nChat History:\n{chat_history}\n\nUser: {user_input}\nAI:"
     )
 )
-
 
 chain = LLMChain(llm=llm, prompt=prompt, memory=memory)
 
