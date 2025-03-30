@@ -1,7 +1,7 @@
-Flask==2.2.3
-langchain==0.0.161
-langchain_community==0.0.1
+Flask
+langchain
+langchain_community
 langchain_groq
-openai==0.27.0
+openai
 wikipedia-api
 gunicorn
