@@ -10,7 +10,7 @@ import os
 
 app = Flask(__name__)
 
-GROQ_API_KEY= "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"
+GROQ_API_KEY= "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"
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "YOUR_GROQ_API_KEY")
 
